@@ -4,6 +4,7 @@ const userSchema = new Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   username: {
     type: String,
@@ -13,7 +14,11 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  joiningDate: {
+  profileImage: {
+    type: String,
+    default: false,
+  },
+  joining: {
     type: Date,
     default: Date.now,
   },
