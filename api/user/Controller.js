@@ -53,6 +53,7 @@ const userLogin = async (req, res) => {
             id: checkUser._id,
             username: checkUser.username,
             email: checkUser.email,
+            profileImage: checkUser.profileImage,
           },
           process.env.JWT_SECRET
         );
